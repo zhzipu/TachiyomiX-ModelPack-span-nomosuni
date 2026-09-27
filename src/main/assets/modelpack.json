@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "span-nomosuni",
+  "name": "SPAN NomosUni 模型",
+  "models": [
+    {
+      "key": "span-nomosuni",
+      "name": "SPAN NomosUni Photo",
+      "engine": "span-nomosuni",
+      "assetPath": "span-nomosuni",
+      "scales": [2],
+      "denoiseLevels": [],
+      "precisions": [0, 1, 2, 3],
+      "supportsNpu": true,
+      "npuScales": [2],
+      "defaults": { "scale": 2, "precision": 0 }
+    }
+  ],
+  "options": {
+    "preloadPages": [1, 2, 3, 5, 8],
+    "gpuPerformanceModes": [0, 1, 2],
+    "tileSizes": [64, 96, 128, 192, 256],
+    "maxProcessingResolution": { "width": 1600, "height": 1600 },
+    "maxResolution": { "width": 0, "height": 0 },
+    "fp16Arithmetic": true
+  }
+}
